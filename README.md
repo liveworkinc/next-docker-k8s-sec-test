@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Overview
 
-## Getting Started
+This project is a technical test that demonstrates the ability to implement a simple web application with a variety of key features, including backend functionality, Dockerization, and deployment to Kubernetes.
 
-First, run the development server:
+
+## How to Run the Project
+
+### Prerequisites
+- Node.js
+- Docker (if you want to run the app in a container)
+- A database (if Prisma is integrated)
+
+### 1. Clone the Repository
 
 ```bash
+git clone <repository-url>
+cd <project-directory>
+
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Test Instruction
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Requirements
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### 1. Implement POST and DELETE Routes with a Form
+- Run the project and acess to http://localhost:3000/users.
+- Create a `POST` route to add new data in te same page.
+- Create a `DELETE` route to remove data in te same page.
+- Implement a form to modify or delete the displayed data.
 
-## Learn More
+#### 2. Dockerize the Application
+- Containerize the application using Docker, allowing it to be run in any environment with Docker installed.
 
-To learn more about Next.js, take a look at the following resources:
+#### 3. Clear README with Instructions
+- Write a clear `README.md` or replace this one that explains how to run the project locally and any required dependencies.
+- Ensure that the steps for running the project are easy to follow.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### 4. Push the Code to GitHub
+- Push the code to a GitHub repository, making sure it is publicly accessible.
+- Share it with your Livework contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### Optional Bonus Tasks
+Feel free to pick desired bonus tasks or implement all
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### 1. Kubernetes Deployment (Bonus)
+- Write Kubernetes YAML files to deploy the app in a cluster.
+- Use your preferred tool for Kubernetes local deployment (e.g., K3s, Minikube, or any managed Kubernetes service).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### 2. Implement Unit Tests (Bonus)
+- Implement unit tests for success and error cases.
+- Write tests to ensure that the POST and DELETE routes are functioning properly.
+- You can do it manually or using vite, jest...
+
+#### 3. Code Audit and Security (Bonus)
+- Perform a basic audit of your code.
+- Identify any potential security vulnerabilities and explain how you have mitigated them or what security practices you've applied.
+
+#### 4. Database Integration with Prisma and SQLite or PostgreSQL (Bonus)
+- Integrate a database using Prisma.
+- Use either SQLite or PostgreSQL as the database for the application instead of hardcoded data.
+
+#### 5. Styling with Tailwind CSS (Bonus)
+- Style the application using Tailwind CSS or another package of your choice.
+- Ensure that the application is visually appealing and responsive.

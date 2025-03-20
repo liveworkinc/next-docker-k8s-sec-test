@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -39,4 +41,22 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.markdown-container h1,
+.markdown-container h2,
+.markdown-container h3 {
+  @apply text-3xl font-semibold text-gray-900;
+}
+
+.markdown-container p {
+  @apply text-base text-gray-700 leading-relaxed;
+}
+
+.markdown-container a {
+  @apply text-blue-500 underline;
+}
+
+.markdown-container code {
+  @apply bg-gray-200 p-1 rounded;
 }
