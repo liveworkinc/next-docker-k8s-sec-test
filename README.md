@@ -68,3 +68,7 @@ Feel free to pick desired bonus tasks or implement all
 #### 5. Styling with Tailwind CSS (Bonus)
 - Style the application using Tailwind CSS or another package of your choice.
 - Ensure that the application is visually appealing and responsive.
+
+#### 6. Review (Bonus)
+- Make a review of the existing code or your own you added.
+- What can be improved, what is deprecated, is there a best architecture or implementation, is there unmantained packages...
